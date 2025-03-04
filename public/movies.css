@@ -1,0 +1,161 @@
+
+// https://chat.google.com/dm/182FN4AAAAE/9_-eTbhbVXU/9_-eTbhbVXU?cls=10
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
+
+body {
+    
+    background: linear-gradient(-45deg, #3E2723, #5D4037, #795548, #A1887F, #D7CCC8);
+    background-size: 500% 500%;
+    animation: gradientBG 12s infinite ease-in-out;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+/* Background Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Navbar */
+.navbar {
+    position: fixed; /* Keeps navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Aligns everything to the left */
+    align-items: center;
+    padding: 15px 40px; /* Proper padding */
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    color: #E0C097;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-right: 40px; /* Creates space between logo and links */
+    transition: color 0.3s ease-in-out;
+}
+
+.logo:hover {
+    color: #FFD7A0;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: #FFD7A0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.movies-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.movies-header {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #E0C097;
+    margin-bottom: 20px;
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 90%;
+    max-width: 600px;
+    height: 200px;
+    background: #3E2723;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    background: #5D4037;
+}
+
+.movie-info {
+    display: none;
+    text-align: center;
+    padding: 4px;
+}
+
+.movie-card:hover .movie-info {
+    display: block;
+}
+
+.movie-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.movie-info h2 {
+    font-size: 1.0em;
+    margin: 10px 0;
+}
+
+.movie-info p {
+    font-size: 1em;
+    color: #FFD7A0;
+}
